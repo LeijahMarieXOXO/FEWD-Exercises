@@ -1,0 +1,8 @@
+body {background-color: yellow; color: green;}
+
+a:link {background-color: white;}
+a:visited {background-color: white;}
+a:hover {background-color: white;}
+a:active {background-color: white;}
+
+#header1 {font-family: 'times new roman'; background-color: white; color: green;}

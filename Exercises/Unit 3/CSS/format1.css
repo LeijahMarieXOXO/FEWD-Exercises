@@ -1,0 +1,10 @@
+body { background-color: white;
+    color: #000099;
+    font-family: sans-serif; }
+
+    a:link {background-color: #cccccc; }
+    a:visited {background-color: #cccccc;}
+    a:hover {background-color: #cccccc;}
+    a:active {background-color: #cccccc;}
+
+    #header1 {font-family: 'times new roman'; color: red; }
