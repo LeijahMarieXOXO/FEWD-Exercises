@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // Strings
+    let name = 'James Byrne\'s '; // example of escaping a character using bashlash
+
+    // concatenation of strings
+    let address = 'Dublin, Ireland' + "sdfff "; 
+    let table = '<table style="color: red;"><tr><td>' + name + ' </td><td>' + address + '</td></tr></table>';
+
+    // String template 
+    let table2 = `\t<table><tr><td>${name}</td><td>${address}</td></tr></table> `;
+
+    console.log(table2);
+
+    // String example
+    let ipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet aliquet nibh. Curabitur erat nisl, consectetur vitae velit ut, blandit ornare neque. Praesent hendrerit lectus eget consectetur accumsan. Integer consequat placerat dapibus. Nunc lacus massa, hendrerit et nibh venenatis, ornare fringilla lectus. Vestibulum in tempus ipsum, et facilisis eros. Nullam dapibus facilisis nisl, ac rhoncus urna efficitur a. Donec quis quam mi. Quisque mattis, enim sed sagittis tincidunt, arcu tellus interdum purus, et consequat massa libero sit amet sem.';
+
+    // String methods 
+    let ipsumArray = ipsum.split(' '); // split a String into an array
+
+    console.log(ipsum.indexOf('dolor')); // String methods
+    console.log(ipsum.toLowerCase());
+
+    // Arrays
+    console.log(ipsumArray); // output an array to the console
+    for (let x=0; x<ipsumArray.length; x++) { // output an array using a for loop
+      console.log(ipsumArray[x]);
+    }
+
+    // simple program which asks the user to input a word and to repeatedly ask until the user enters the letter, 'q'
+    let wordArray = []; // empty array
+    let word = '';
+    while (word != 'q'){
+      word = prompt("Enter a word. Enter q to stop:");
+      wordArray.push(word); // add new word to the array
+    }
+
+    console.log(wordArray.join(', ')); // output the array elements as a single string
+
+    // another example 
+    let colours = ['Red', 'Green', 'Blue'];
+    console.log(colours);
+
+    for (let x=0; x<colours.length; x++){
+      console.log("x = " + x + ' - ' + colours[x]);
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>

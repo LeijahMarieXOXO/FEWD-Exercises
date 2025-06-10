@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //alert("Hello World from the head");
+    console.log("This is a console message")
+    // variables
+    const PI = 3.1427;
+    let name = "James Byrne"; // string
+    let age = 21; // integer
+    let float = 21.5; // float, decimal
+    let bool = true; // boolean
+    // object
+    const person = {
+      firstName: "John", 
+      lastName:" Doe", 
+      age: 50, 
+      eyeColor: "blue"
+    };
+
+    //name = prompt("Enter your name?");
+
+    let firstName = "James"; // camelCase
+    let first_name = "James"; // under_score
+
+    console.log('firstName: ' + firstName);
+
+    // call a function
+    let fahrenheit = 79
+    let returnValue = fahrenheitToCelsius(fahrenheit);
+    // output
+    console.log("The temperature in celsius is: " + returnValue);
+
+    // calculation
+    function fahrenheitToCelsius(fahrenheit = 67) {
+      let celsius = 5/9 * (fahrenheit -32);
+      return celsius;
+    }
+
+
+  </script>  
+</head>
+<body>
+  <script src="js/main.js"></script> <!-- load external JS file -->
+</body>
+</html>

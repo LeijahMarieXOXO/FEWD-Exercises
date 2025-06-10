@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    // if - else
+    number = 10
+    if (number == 10) {
+      console.log('Number is equal to ' + number);
+    } else {
+      console.log('Number is not equal to ' + number);
+    }
+
+    // for loop
+    for (let x=0; x<=5; x++) {
+      // code to execute
+      console.log("The value of x is " + x);
+    }
+
+    // Fahrenheit To Celsius calculator
+    // input
+    let fahrenheit = prompt("Enter the temperature in fahrenheit:");
+    fahrenheit = parseInt(fahrenheit); // convert string from prompt function to an integer
+    let fahNan = isNaN(fahrenheit);
+
+    while (fahNan) {
+      console.log("while loop");
+      fahrenheit = prompt("Sorry, that wasn't a number. Please reenter the temperature in fahrenheit:");
+      fahNan = isNaN(fahrenheit);
+    }
+
+    let returnValue = fahrenheitToCelsius(fahrenheit); // call the function
+
+    // output
+    console.log("The temperature in celsius is: " + returnValue);
+
+    // calculation
+    function fahrenheitToCelsius(fahrenheit = 67) {
+      let celsius = 5/9 * (fahrenheit -32);
+      return celsius;
+    }
+
+
+  </script>  
+</head>
+<body>
+  <script src="js/main.js"></script> <!-- load external JS file -->
+</body>
+</html>
